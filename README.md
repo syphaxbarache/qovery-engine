@@ -23,7 +23,7 @@
 
 ## Overview
 
-![screenshot](/qovery-engine.fig)
+![screenshot](/qovery.PNG)
 
 
 

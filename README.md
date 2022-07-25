@@ -23,7 +23,7 @@
 
 ## Overview
 
-![screenshot](/weather-app.PNG)
+![screenshot](/qovery-engine.fig)
 
 
 

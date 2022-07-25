@@ -1,0 +1,535 @@
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url('/assets/FONTS/hk-grotesk/WEB/HKGrotesk-Light.eot');
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*******************partie1******************/
+.partie1{
+    height: 100vh;
+    display: flex;
+    background: #151B2B;
+    display: flex;
+    justify-content: center;
+}
+/*********left *********/
+.partie1 .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.partie1 .left .logo{
+    position: absolute;
+    top: 40px;
+    width: 470px;
+}
+.partie1 .left main{
+    width: 470px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left h1{
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 110%;
+    /* identical to box height, or 51px */
+
+
+    /* White */
+
+    color: #FFFFFF;
+}
+.left .Qovery-Engine{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left .Qovery-Engine .star{
+    border-radius: 3px;
+    margin-top: 6px;
+    margin-left: 8px;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left .Qovery-Engine .star div:first-child{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left .Qovery-Engine .star div:nth-child(2){
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+}
+.left h5{
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 140%;
+    /* or 35px */
+
+
+    /* White */
+
+    color: #FFFFFF;
+}
+.left p{
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+
+    /* Dark Gray */
+
+    color: #8686B3;
+}
+.left .button{
+    display: flex;
+}
+.left button{
+    height: 39px;
+
+    color: #ffffffff;
+
+    border-radius: 3px;
+    border: none;
+}
+.left button.Github{
+    width: 157.16px;
+    background: #454658;
+}
+.left button.Discord{
+    margin-left: 24px;
+    width: 182px;
+    background: #6578C0;
+    
+}
+
+/*********right *********/
+.partie1 .right{
+     width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partie1 .right .cares{
+    position: relative;
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.partie1 .right .cares .care{
+     transform: rotate(45deg);
+    background-color: #212638;
+    width: 150px;
+    height: 150px;
+}
+.partie1 .right .cares .care .mini-care{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partie1 .right .cares .care-top
+{
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+   position: absolute;
+   animation: med-to-top 3s ease-in forwards;
+}
+/*.partie1 .right .cares .care-top .qovery{
+    position: absolute;
+    color: white;
+    background-color: #7072CB;
+}
+*/
+.partie1 .right .cares .care-top .mini-care{
+    height: 90%;
+    width: 90%;
+    background-color: #7072CB;
+}
+.partie1 .right .cares .care-top .mini-care img{
+    width: 80px;
+    height: 80px;
+    transform: rotate(-45deg);
+}
+.partie1 .right .care-med {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+.partie1 .right .care-med .mini-care{
+    transform: rotate(-90deg);
+    width: 40%;
+    height: 40%;
+    background-color: #2E5CB5;
+}
+.partie1 .right .care-med .mini-care img{
+    width: 30px;
+}
+.partie1 .right .cares .care-bottom{
+    animation: med-to-bottom 3s ease-in forwards;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+    animation-delay: 0.5s;
+}
+.partie1 .right .cares .care-bottom .mini-care{
+    transform: rotate(-90deg);
+    width: 40%;
+    height: 40%;
+    background-color: #2E5CB5;
+}
+.partie1 .right .cares .care-bottom .mini-care img{
+    transform: rotate(45deg);
+}
+.partie1 .right .cares .care-bottom .mini-care:first-child{
+    background-color: #5D1D58;
+}
+.partie1 .right .cares .care-bottom .mini-care:nth-child(2){
+    background-color: #274D6F
+}
+.partie1 .right .cares .care-bottom .mini-care:nth-child(4){
+    background-color: #19386F
+}
+.partie1 .right .cares .care-bottom .mini-care:nth-child(3){
+    background-color: #5D462B
+}
+
+
+
+
+@keyframes med-to-top{
+    from{
+        opacity: 0;
+        transform: translateY(0) rotate(45deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-115%) rotate(45deg);
+    }
+}
+@keyframes med-to-bottom{
+    from{
+        opacity: 0;
+        transform: translateY(0) rotate(45deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(115%) rotate(45deg);
+    }
+}
+
+
+@media screen and (max-width:687px) {
+    *{
+        overflow-x: hidden;
+    }
+    .partie1{
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+        width: 100vw;
+        justify-content: start;
+    }
+    .partie1 .left{
+        height: 55vh;
+        justify-content: space-between;
+    }
+    .partie1 .left .logo{
+        width: 80%;
+       position: static;
+       margin-top: 15px;
+    }
+    .partie1 .left main{
+        width: 80%;
+        height: 80%;
+    }
+    .partie1 .right {
+        height: 64vh;
+        width: 100%;
+    }
+    .partie1 .right .cares .care{
+        height: 110px;
+        width: 110px;
+    }
+    .partie1 .button{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width:455px){
+   
+    .left button.Github,.left button.Discord{
+        width: 40%;
+    }
+}
+@media screen and (max-width:370px){
+    .partie1 .left{
+        height: 75vh;
+    }
+}
+
+
+
+/***********functioning ************************/
+section.functioning{
+    height: 100vh;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+section.functioning h1{
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 110%;
+    /* or 35px */
+
+
+    /* Black */
+
+    color: #454658;
+}
+section.functioning p{
+    width: 60%;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Black */
+
+    color: #454658;
+}
+section.functioning img{
+    width: 60%;
+}
+@media screen and (max-width:1000px){
+    section.functioning p,section.functioning img{
+        width: 90%;
+    }
+}
+/*******Usage********/
+section.usage{
+    background-color: #E5E5E5;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+section.usage h1{
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    /* or 35px */
+
+
+    /* Black */
+
+    color: #454658;
+}
+section.usage p{
+    width: 60%;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    text-align: center;
+
+    /* Black */
+
+    color: #454658;
+}
+section.usage img{
+    width: max-content;
+    height: 65%;
+}
+section.usage button{
+    height: 39px;
+
+    color: #ffffffff;
+
+    border-radius: 3px;
+    border: none;
+}
+section.usage button.Github{
+    width: 157.16px;
+    background: #454658;
+}
+section.usage button.Discord{
+    margin-left: 24px;
+    width: 182px;
+    background: #6578C0;
+}
+section.usage .button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media screen and (max-width:670px){
+    section.usage img{
+        width: 90%;
+    }
+}
+/**************** section 4 *******/
+section.section4{
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 190vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.section4 .blocs{
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section.section4 .bloc{
+    width: 428px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.178);
+}
+section.section4 .bloc:hover{
+    transform: scale(1.1);
+}
+section.section4 .bloc h1{
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    /* or 26px */
+
+
+    /* Black */
+
+    color: #454658;
+}
+section.section4 .bloc p{
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+
+    /* Black */
+
+    color: #454658;
+}
+section.section4 .bloc  img{
+    width: max-content;
+    height: max-content;
+}
+section.section4 footer h1{
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    /* or 35px */
+
+    text-align: center;
+
+    /* Black */
+
+    color: #454658;
+}
+@media screen and (max-width:1082px){
+    section.section4{
+        height: 310vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    section.section4 .blocs{
+        height: 95%;
+    }
+    
+    section.section5{
+        height: 100px;
+    }
+}
+/*********section 5 *************/
+section.section5{
+    height: 160px;
+    background: #151B2B;
+}
+
+
+@media screen and (max-width:455px){
+   
+     section.usage button.Github,section.usage button.Discord{
+        width: 40%;
+        margin: 0;
+    }
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
